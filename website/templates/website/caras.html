@@ -1,0 +1,76 @@
+<figure class="minnie_cara">
+    <a href="#"><img src="imagens/minnie_cara.png"style="width: 150px;height: 150px;" onmouseover="bleep.play()"></a>
+</figure>
+<figure class="mickey_cara">
+    <a href="#"><img src="imagens/mickey-mouse-face.png" style="width: 150px;height: 150px;"></a>
+</figure>
+<figure class="pluto_cara">
+    <a href="#"><img src="imagens/margarida_face.png" style="width:150px;height: 150px;"></a>
+</figure>  
+.minnie_cara {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    animation:minnie-cara 10s ;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes minnie-cara {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+
+.minnie_cara:hover{
+    border-radius: 50%
+}
+.mickey_cara:hover{
+    border-radius: 50%
+}
+.mickey_cara {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    position: relative;
+    animation:mickey-cara 5s ;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes mickey-cara {
+    0% { transform: translate(1px, 1px) rotate(0deg);background-color:red }
+    10% { transform: translate(-1px, -2px) rotate(-1deg);background-color:yellow }
+    20% { transform: translate(-3px, 0px) rotate(1deg);background-color:green }
+    30% { transform: translate(3px, 2px) rotate(0deg);background-color:yellow }
+    40% { transform: translate(1px, -1px) rotate(1deg);background-color:green }
+    50% { transform: translate(-1px, 2px) rotate(-1deg);background-color:red }
+    60% { transform: translate(-3px, 1px) rotate(0deg);background-color:green }
+    70% { transform: translate(3px, 1px) rotate(-1deg);background-color:red }
+    80% { transform: translate(-1px, -1px) rotate(1deg); background-color:green}
+    90% { transform: translate(1px, 2px) rotate(0deg); background-color:green}
+    100% { transform: translate(1px, -2px) rotate(-1deg);background-color:red }
+  }
+
+  .pluto_cara:hover{
+    border-radius: 50%
+}
+
+.minnie_cara {
+    width: 150px;
+    height: 150px;
+    background-color:#022636;
+}
+.pluto_cara {
+    width: 150px;
+    height: 150px;
+    background-color:#022636;
+}
+.mickey_cara {
+    width: 150px;
+    height: 150px;
+    background-color:#022636;
+  
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html id="Home_html" lang="pt">
+      <head>
+         {% load static %}
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="Site para Crianças" content="Website sobre Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Casa</title>
+    </head>
+    <audio autoplay  >
+        <source src="audios/home.wav" type="audio/ogg">
+        <source src="audios/home.wav" type="audio/mpeg">
+    </audio>
+
+      <body background="{% static 'website/images/fundo.jpg' %}">
+        <div class="logo_nav">
+             <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                        <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                        <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+                                <li><a href="{% url 'website:index' %}">Single Page</a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+
+                <a  class="minnie_menu" href="quinta.html"><img class="minnie_casa" src="{% static 'website/images/Minnie_Mouse_pose_-removebg-preview.png' %}" ></a>
+            </div>
+            <div class="Main">
+                <figure class="main1">
+                    <a id="mickey_menu" href="Home.html"><img class="mickey_casa"  src="{% static 'website/images/Mickey_Mouse.png' %}" ></a>
+
+                </figure>
+                <figure class="main1">
+                    <a id="pato_menu" href="{% url 'website:Toys' %}"><img class="pato_casa" src="{% static 'website/images/pato_donnald_boneco-removebg-preview.png' %}"></a>
+                </figure>
+                <figure class="main1">
+                    <a id="pluto_menu" href="{% url 'website:jogos' %}"><img class="pluto_casa"  src="{% static 'website/images/Pluto_boneco.png' %}"></a>
+                </figure> 
+                <figure class="main1">
+                    <a id="winnie_menu" href="{% url 'website:quizz' %}"><img class="winnie_casa" src="{% static 'website/images/winnie_boneco.png' %}"></a>
+                </figure> 
+            </div>  
+            <div class="Footer">Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+         {% load static %}
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="Site para Crianças" content="Website sobre Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Jogos</title>
+    </head>
+
+    <body background="{% static 'website/images/jogos_fundo.jpg' %}">
+        <div class="logo_nav">
+            <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                         <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                           <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+   <li><a href="{% url 'website:index' %}">Single Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+
+                <a id="pato_boneco_toys" href="#"><img class="pato_jogos" src="{% static 'website/images/pato_donnald_boneco-removebg-preview.png' %}"  onmouseover="mickey.play()"></a>
+            </div>
+            <div class="Main">
+                <figure class="Jogos">
+                    <a href="https://www.miniclip.com/games/bubble-trouble/pt/#t-c-f-C">
+
+                        <img id="bouble" src="{% static 'website/images/bouble.png' %}" >
+                    </a>
+                </figure>
+                <figure class="Jogos">
+                    <a href="https://www.miniclip.com/games/flow-mania/pt/#t-w-c-C">
+
+                        <img id="flow_mania" src="{% static 'website/images/flow-mania.png' %}"  >
+                    </a>
+                   
+                </figure>
+                <figure class="Jogos">
+                    <a href="https://www.miniclip.com/games/cut-the-rope-2/pt/#t-w-c-C">
+
+                        <img id="cut_rope" src="{% static 'website/images/cut_rope.webp' %}" >
+                    </a>
+                    
+                </figure>
+                <figure class="Jogos">
+                    <a href="https://www.miniclip.com/games/2048/pt/#t-c-f-C">
+
+                        <img id="doismil" src="{% static 'website/images/2048.png' %}"  >
+                    </a>
+                  
+                </figure>
+                <figure class="Jogos">
+                    <a href="https://www.miniclip.com/games/agar-io/pt/#t-w-t-C">
+
+                        <img id="agario" src="{% static 'website/images/agario.png' %}" >
+                    </a>
+                </figure>
+            </div>  
+            <div class="Footer">Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% load static %}
+
+    <meta charset="UTF-8">
+    <title>Website para crianças</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="jumbotron text-center">
+        <a href="{% url 'website:home' %}">Casa</a>
+        <a href="{% url 'website:Toys' %}">Personagens</a>
+        <a href="{% url 'website:jogos' %}">Jogos</a>
+        <a href="{% url 'website:quizz' %}">Quizz</a>
+        <a href="{% url 'website:musica' %}">Musica</a>
+        <a href="{% url 'website:quinta' %}">Quinta</a>
+        <a href="{% url 'website:sobre' %}">Sobre</a>
+        <a href="{% url 'website:comentarios' %}">Comentarios</a>
+        <a href="{% url 'website:contactos' %}">Contactos</a>
+        <a href="{% url 'website:index' %}">Single Page</a>
+    </header>
+
+    <main class="container text-center">
+    {% block main %}
+
+    {% endblock %}
+    </main>
+    <footer></footer>
+</body>
+</html>

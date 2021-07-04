@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html id="Home_html" lang="pt">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="Site para Crianças" content="Website sobre Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizz</title>
+    </head> 
+    <audio autoplay loop>
+
+        <source src="{% static 'website/audios/souteuamigo.mp3' %}" type="audio/ogg">
+        <source src="{% static 'website/audios/souteuamigo.mp3' %}" type="audio/mpeg">
+    </audio>
+
+    <body background="{% static 'website/images/quizback.jpg' %}">
+        
+        <div class="logo_nav">
+            <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                       <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                           <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+   <li><a href="{% url 'website:index' %}">Single Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+
+                <a  id="jerry_boneco_toys" href="#"><img class="jerry_quizz" src="{% static 'website/images/jerry_boneco.png' %}" ></a>
+            </div>
+            <div class="Main"> 
+                <fieldset id="dados_pessoais" >
+                    <legend>Dados Pessoais:</legend>
+                    <label id="pname" for="pname">Primeiro nome:</label>
+                    <input type="text" id="pname" name="pname"><br><br>
+        
+                    <label id="uname" for="uname">Ultimo nome:</label>
+                    <input type="text" id="uname" name="uname"><br><br>
+        
+                    <label id="email" for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                </fieldset>
+                <fieldset id="Quizzes" >
+                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <legend>Quizz:</legend>
+                    <label for="pname">Como se chama o cão do rato Mickey?:</label>
+                    <input type="text" id="pname" placeholder="Nome" name="pname" size="50"><br><br>
+                    
+                    <p>Qual foi a primeira princesa da Disney?</p>
+                    <label class="container">Ariel
+                    <input type="radio" checked="checked" name="radio">
+                    <span class="checkmark" id="um"></span>
+                    </label><br>
+                    <label class="container">Cinderela
+                    <input type="radio"name="radio">
+                    <span class="checkmark" id="dois"></span>
+                    </label><br>
+                    <label class="container">Aurora
+                    <input type="radio"name="radio">
+                    <span class="checkmark" id="tres"></span>
+                    </label><br>
+                    <label class="container">Branca-De-Neve
+                    <input type="radio"name="radio">
+                    <span class="checkmark" id="quatro"></span>
+                    </label><br>
+                    <br>  
+
+                    <p>Quais os nomes dos sobrinhos de Pato Donald?</p>
+                    <input type="checkbox" name="checkbox">
+                    <label > Huguinho</label><br>
+                    <input type="checkbox"  name="checkbox" >
+                    <label > Luisinho</label><br>
+                    <input type="checkbox"  name="checkbox">
+                    <label >Zezinho</label><br>
+                    <input type="checkbox"  name="checkbox">
+                    <label >Joãozinho</label><br>
+                    <input type="checkbox"  name="checkbox">
+                    <label >Pedrinho</label><br>
+                    <br>
+                
+                    <label>Quando a Pixar foi inventada?:</label>
+                    <input type="date"><br>
+                    <br>
+
+                    <label for="favcolor">Qual a cor predominante da saia da Minnie:</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#fffff"><br>
+                    <br>
+
+                    <label>Quantos Dalmatas tem a Cruella de Vil? (entre 50 and 200):</label>
+                    <input type="number"  name="quantity" min="50" max="200">
+                    <br>
+                    <br>
+                    <label for="vol">Diz me o quanto gostas de desenhos animados. (entre 0 and 10):</label>
+                    <input type="range"  name="vol" min="0" max="10">
+                    <br>
+                    <br>
+                    <input id="submit_dados" type="submit" value="Send">
+                </form>
+                </fieldset>  
+            </div>  
+            <div class="Footer">Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>

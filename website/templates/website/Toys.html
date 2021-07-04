@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html id="personagens_html">
+    <head>
+        {% load static %}
+      <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+      <meta name="keywords" content="HTML,CSS">
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <meta name="Site para Crianças" content="Website para Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personagens</title>
+        <script>
+            var minie=new Audio()
+            minie.src="{% static 'website/audios/minnie.mp3' %}"
+
+            var margarida=new Audio()
+            margarida.src="{% static 'website/audios/margarida.mp3' %}"
+
+            var pluto=new Audio()
+            pluto.src="{% static 'website/audios/pluto.mp3' %}"
+
+            var pato=new Audio()
+            pato.src="{% static 'website/audios/pato.mp3' %}"
+
+            var pateta=new Audio()
+            pateta.src="{% static 'website/audios/pateta.mp3' %}"
+
+            var patinhas=new Audio()
+            patinhas.src="{% static 'website/audios/patinhas.mp3' %}"
+
+            var bugs=new Audio()
+            bugs.src="{% static 'website/audios/bugs.mp3' %}"
+
+            var daffy=new Audio()
+            daffy.src="{% static 'website/audios/daffy.mp3' %}"
+
+            var mickey=new Audio()
+            mickey.src="{% static 'website/audios/mickey.mp3' %}"
+
+            var winnie=new Audio()
+            winnie.src="{% static 'website/audios/winnie.mp3' %}"
+        </script>
+    </head>
+    <body background="{% static 'website/images/teste.jpg' %}">
+        <div class="logo_nav">
+            <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                      <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                           <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+                                <li><a href="{% url 'website:index' %}">Single Page</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+                <a id="mickey_boneco_toys" href="#"><img class="mickey_personagens" src="{% static 'website/images/Mickey_Mouse.png' %}"></a>
+            </div>
+            <div class="Main_toys">
+                <figure class="column">
+                    <img id="minnie_toys" src="{% static 'website/images/minnie_cara.png' %}" background-image="{% static 'images/vermelho.png' %}" onmouseover="minie.play(),pluto.pause()
+                    ,margarida.pause(),pato.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()">
+                </figure>
+                  <figure class="column">
+                    <img id="margarida_toys" src="{% static 'website/images/margarida_cara.png' %}"  onmouseover="margarida.play(),pluto.pause()
+                    ,minie.pause(),pato.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()" >
+                  </figure>
+                  <figure class="column">
+                    <img id="pluto_toys" src="{% static 'website/images/pluto_face.png' %}" onmouseover="pluto.play(), margarida.pause()
+                    ,minie.pause(),pato.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()" >
+                  </figure>
+                  <figure class="column">
+                    <img id="pato_toys" src="{% static 'website/images/pato_donnald_cara.png' %}"  onmouseover="pato.play(), pluto.pause(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()" >
+                  </figure>
+                  <figure class="column">
+
+                    <img id="pateta_toys" src="{% static 'website/images/pateta_cara.png' %}"  onmouseover="pateta.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pato.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()">
+                  </figure>
+                  <figure class="column">
+                    <img id="patinhas_toys" src="{% static 'website/images/patinhas_cara.png' %}"  onmouseover="patinhas.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),pato.pause(),bugs.pause(),daffy.pause(),mickey.pause(),winnie.pause()">
+                  </figure>
+                  <figure class="column">
+                    <img id="bugs_toys" src="{% static 'website/images/bugs_bunny_face.png' %}"  onmouseover="bugs.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),patinhas.pause(),pato.pause(),daffy.pause(),mickey.pause(),winnie.pause()">
+                  </figure>
+                  <figure class="column">
+
+                    <img id="daffy_toys" src="{% static 'website/images/daffy_duck_face.png' %}"  onmouseover="daffy.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),pato.pause(),mickey.pause(),winnie.pause()" >
+                  </figure>
+                  <figure class="column">
+                    <img id="tom_toys" src="{% static 'website/images/mickey_cara.png' %}" onmouseover="mickey.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),pato.pause(),winnie.pause()">
+                  </figure>
+                  <figure class="column">
+                    <img id="jerry_toys" src="{% static 'website/images/winnie_face.png' %}" onmouseover="winnie.play(),pluto.pause()
+                    ,minie.pause(),margarida.pause(),pateta.pause(),patinhas.pause(),bugs.pause(),daffy.pause(),mickey.pause(),pato.pause()">
+                  </figure> 
+            </div>  
+            <div class="Footer">Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>

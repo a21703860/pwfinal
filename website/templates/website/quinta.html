@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html id="Home_html" lang="pt">
+    <head>
+         {% load static %}
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="Site para Crianças" content="Website sobre Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quinta</title>
+        <script>
+            var cavalo=new Audio()
+            cavalo.src="{% static 'website/audios/cavalo.wav' %}"
+
+            var vaca=new Audio()
+            vaca.src="{% static 'website/audios/vacas.wav' %}"
+
+            var ovelha=new Audio()
+            ovelha.src="{% static 'website/audios/ovelhas.wav' %}"
+
+            var burro=new Audio()
+            burro.src="{% static 'website/audios/burro.mp3' %}"
+
+            var porco=new Audio()
+            porco.src="{% static 'website/audios/porco.mp3' %}"
+
+            var coelho=new Audio()
+            coelho.src="{% static 'website/audios/coelho.mp3' %}"
+
+            var galinha=new Audio()
+            galinha.src="{% static 'website/audios/galinhas.mp3' %}"
+
+            var galo=new Audio()
+            galo.src="{% static 'website/audios/galo.mp3' %}"
+
+            var cao=new Audio()
+            cao.src="{% static 'website/audios/cao.mp3' %}"
+        </script>
+    </head>
+    <body background="{% static 'website/images/animais_fundo.jpg' %}" >
+        <div class="logo_nav">
+
+            <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                         <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                        <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+   <li><a href="{% url 'website:index' %}">Single Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+            </div>
+            <div class="Main">
+                <a id="cavalo" onmouseover="cavalo.play()">.</a>
+                <a id="vaca" onmouseover="vaca.play()">.</a>
+                <a id="ovelha" onmouseover="ovelha.play()">.</a>
+                <a id="burro" onmouseover="burro.play()">.</a>
+                <a id="porco" onmouseover="porco.play()">.</a>
+                <a id="coelho" onmouseover="coelho.play()">.</a>
+                <a id="galinha" onmouseover="galinha.play()">.</a>
+                <a id="galo" onmouseover="galo.play()">.</a>
+                <a id="cao" onmouseover="cao.play()">.</a>
+            </div>  
+            <div class="Footer" >Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>

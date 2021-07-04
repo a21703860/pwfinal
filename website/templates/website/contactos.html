@@ -1,0 +1,27 @@
+{% extends 'website/base.html' %}
+
+{% block main %}
+    {% for contacto in website %}
+        <p>
+            <span class="info">
+                ({{ contacto.criado.day }}/{{ contacto.criado.month }})
+                {% if contacto.prioridade == 1 %}
+                    🟢
+                {% elif contacto.prioridade == 2 %}
+                    🟡
+                {% else %}
+                     🔴
+                {% endif %}
+            </span>
+            {% if contacto.concluido == True %}
+                <del>{{ contacto.titulo }}</del>
+            {% else %}
+                {{ contacto.titulo }}
+            {% endif %}
+            <a href="{% url 'website:edita' contacto.id %}" class="btn btn-warning  btn-sm" style="float: right; margin-right: 10px">
+                Editar
+            </a>
+        </p>
+   {% endfor %}
+        <a href="{% url 'website:nova' %}" class="btn btn-success btn-block">+ Novo Contacto</a>
+{% endblock %}

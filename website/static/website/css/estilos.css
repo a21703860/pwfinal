@@ -1,0 +1,886 @@
+{% load static %}
+
+#cavalo{
+    position: relative;
+    right: 50%;
+    top: 600%;
+    color: chocolate;
+   
+}
+#vaca{
+    position: relative;
+    right: -10%;
+    top: 600%;
+    color: white;
+}
+#ovelha{
+    position: relative;
+    right: -10%;
+    top: 1000%;
+    color: white;  
+}
+#burro{
+    position: relative;
+    right: 17%;
+    top: 850%;
+    color: grey;  
+}
+#porco{
+    position: relative;
+    right: 45%;
+    top: 850%;
+    color: pink;  
+}
+#coelho{
+    position: relative;
+    right: 20%;
+    top: 1050%;
+    color: grey; 
+}
+#galinha{
+    position: relative;
+    right: -12%;
+    top: 1250%;
+    color: orange; 
+}
+#galo{
+    position: relative;
+    right: -20%;
+    top: 1250%;
+    color: white; 
+}
+#cao{
+    position: relative;
+    right: 40%;
+    top: 1150%;
+    color: brown;  
+}
+.sobree{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    float:left;
+}
+.tabelas{
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    float:left;
+    right: -20%;
+
+}
+.layout1{
+    width: 50%;  
+}
+.layout2{
+    width: 50%;
+}
+.wordcloud{
+    width: 60%;
+}
+.mapa{
+    width: 80%;
+}
+.tecnicas_usadas {
+    width: 0%;
+    height: 0%;
+    font-size: 50%;
+    size: 50%;
+    border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+*{
+    font-family: 'Sofia';
+}
+
+.personagens_html{
+    width: 100%; 
+    height:100%; 
+    overflow:hidden;
+}
+.Home_html{
+    width: 100%; 
+    height:100%; 
+    overflow:hidden;
+}
+
+.Musica_html{
+    width: 100%; 
+    height:100%; 
+    overflow:hidden;
+}
+#guitarra{
+    width: 200px;
+}
+#trompete{
+    width: 200px;
+}
+#piano{
+    width: 200px;
+}
+#bateria{
+    width: 200px;
+}
+#bouble{
+    width: 150px;
+}
+#flow_mania{
+    width: 150px;
+}
+#cut_rope{
+    width: 150px;
+}
+#doismil{
+    width: 150px;
+}
+#agario{
+    width: 150px;
+}
+.Header { grid-area: header; }
+.Menu { grid-area: menu; }
+.Main { grid-area: main; }
+.Footer { grid-area: footer; }
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'menu main main main main main'
+      'menu footer footer footer footer footer';
+  }
+.grid-container > div {
+    text-align: center;
+    font-size: 30px;
+}
+.Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+ }
+.pato_jogos{
+    width: 200px;
+    height:200px ;
+} 
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin:0 0 0 20px;
+    list-style: none;
+}
+nav {
+    width: 100%;
+    overflow: auto;
+    background: #768186;
+    
+}
+li{
+    float:left;
+}
+li a{
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+li a:hover{
+    background: rgb(97, 95, 95);
+}
+.mickey_personagens{
+    width: 200px;
+    height:200px;
+}
+.logo_nav img{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}  
+.Main{
+    display: block;
+    float:left;
+}
+.mickey_casa{
+    width: 200px;
+    height: 200px;
+}
+.pluto_casa{
+    width: 200px;
+    height: 200px;
+}
+.pato_casa{
+    width: 200px;
+    height: 200px;
+}
+.winnie_casa{
+    width: 200px;
+    height: 200px;
+}
+.minnie_casa{
+    width: 200px;
+    height: 200px;
+}
+@keyframes minnie {
+    0%   {top: 260px;}
+    25%  {top: 250px;}
+    50%  {top: 240px;}
+    75%  {top: 235px;}
+    100% {top: 250px;}
+}
+@keyframes mickey{
+    0%   {top: 260px;}
+    25%  {top: 250px;}
+    50%  {top: 240px;}
+    75%  {top: 235px;}
+    100% {top: 250px;}
+
+}
+.minnie_menu{
+    position: relative;
+    animation: minnie 10s infinite;
+}
+.jerry_quizz{
+    width: 200px;
+    height: 200px;
+}
+.mickeyguitarra{
+    width: 200px;
+    height: 200px;
+}
+#pato_boneco_toys{
+    position: relative;
+    top: 20px;
+    left: 10%;
+    animation: mickey 10s infinite;  
+}
+#mickey_guitarra{
+    position: relative;
+    top: 20px;
+    left: 10%;
+    animation: mickey 10s infinite;  
+}
+#jerry_boneco_toys{
+    position: relative;
+    top: 20px;
+    left: 10%;
+    animation: mickey 10s infinite;  
+}
+#mickey_boneco_toys{
+    position: relative;
+    top: 250px;
+    left: 10%;
+    animation: mickey 10s infinite;
+    
+}
+#mickey_menu{
+    position: relative;
+    animation: bonecos 10s infinite;
+}
+#pato_menu{
+    position: relative;
+    animation: bonecos 10s infinite;
+}
+#pluto_menu{
+    position: relative;
+    animation: bonecos 10s infinite;
+}
+#winnie_menu{
+    position: relative;
+    animation: bonecos 10s infinite;
+}
+
+@keyframes bonecos {
+    0%   {top: 10px;}
+    25%  {top: 0px;}
+    50%  {top: -10px;}
+    75%  {top: -15px;}
+    100% {top: 0px;}
+}
+
+.column{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    float: left;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    left: 10%;
+    width: 10%;
+    height: 40%;
+    
+}
+.Jogos{
+    position: relative;
+    float: left;
+    width: 10%;
+    height: 0%;
+    top: 50%;
+}
+.musica{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    float: left;
+}
+.main1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    float: left;
+    position: relative;
+    left: 10%;
+    top: 70%;
+    width: 10%;
+    height: 40%;
+}
+
+
+#minnie_toys:hover{
+    border-radius: 50%;
+}
+#margarida_toys:hover{
+    border-radius: 50%;
+}
+#pluto_toys:hover{
+    border-radius: 50%;
+}
+#pato_toys:hover{
+    border-radius: 50%;
+}
+#pateta_toys:hover{
+    border-radius: 50%;
+}
+#pateta_toys:hover{
+    border-radius: 50%;
+}
+#patinhas_toys:hover{
+    border-radius: 50%;
+}
+#bugs_toys:hover{
+    border-radius: 50%;
+}
+#daffy_toys:hover{
+    border-radius: 50%;
+}
+#tom_toys:hover{
+    border-radius: 50%;
+}
+#jerry_toys:hover{
+    border-radius: 50%;
+}
+
+#minnie_toys{
+
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    width: 100px;
+    position: relative;
+}
+#margarida_toys{
+    background-image: url("images/vermelho.png");
+    background-position: center;
+    background-size: cover;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+
+}
+#pluto_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: cover;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#pato_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#pateta_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: cover;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#patinhas_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#bugs_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#daffy_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#tom_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+#jerry_toys{
+    background-image: url("{% static 'images/vermelho.png' %}");
+    background-position: center;
+    background-size: 200%;
+    height: 170px;
+    position: relative;
+    width: 100px;
+
+}
+
+figcaption {
+    background-color: #768186;
+    color: white;
+    padding: 2px;
+    text-align: center;
+}
+
+
+#submit_dados{
+    background-color: #768186;
+    padding: 14px 40px;
+}
+.container {
+  
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+.container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+}
+#um{
+    left: -55px;
+    background-color:#768186 ;
+}
+#dois{
+    left: -35px;
+    background-color:#768186 ;
+}
+#tres{
+    left: -45px;
+    background-color:#768186 ;
+}
+#quatro{
+    background-color:#768186 ;
+}
+
+@media (max-height: 800px) and (max-width: 700px){
+    * {
+        box-sizing:border-box;
+    } 
+    .Home_html{
+        width: 90%; 
+        height:90%; 
+        overflow:hidden;
+    }
+   
+    ul{
+        margin: 0 0 0 10%;
+        list-style:none;
+    }
+    nav {
+        overflow: auto;
+        background: #768186;
+    }
+    li{
+        float:left;
+    }
+    li a{
+        display: block;
+        padding: 10px 5px;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 30%;
+    }
+    li a:hover{
+        background: rgb(97, 95, 95);
+    }
+    .logo_nav img{
+        position: absolute;
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+    } 
+    .main1{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        float: left;
+        position: relative;
+        left: -10%;
+        margin-right: 30%;
+        top: 50%;
+        width: 0%;
+        height: 50%;
+    }
+    .mickey_casa{
+        width: 100px;
+        height: 100px;
+    }
+    .pluto_casa{
+        width: 100px;
+        height: 100px;
+    }
+    .pato_casa{
+        width: 100px;
+        height: 100px;
+    }
+    .winnie_casa{
+        width: 100px;
+        height: 100px;
+    }
+    .minnie_casa{
+        width: 100px;
+        height: 100px;
+    }
+  
+    #minnie_toys{
+        background-image: url("{% static 'images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #margarida_toys{
+        background-image: url("images/vermelho.png");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    
+    }
+    #pluto_toys{
+        background-image: url("images/vermelho.png");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #pato_toys{
+        background-image: url("images/vermelho.png");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #pateta_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #patinhas_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #bugs_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #daffy_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #tom_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    #jerry_toys{
+        background-image: url("{% static 'website/images/vermelho.png' %}");
+        background-position: center;
+        background-size: 200%;
+        height: 50px;
+        width: 50px;
+        position: relative;
+    }
+    .mickey_personagens{
+        width: 80px;
+        height:80px;
+    }
+    .pato_jogos{
+        width: 80px;
+        height:80px ;
+    } 
+    .column{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: relative;
+        float: left;
+        top: 10%;
+        transform: translate(-50%, -50%);
+        left: 10%;
+        width: 5%;
+        height: 5%;
+        
+    }
+    .Jogos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: relative;
+        float: left;
+        width: 10%;
+        height: 10%;
+        top: 50%;
+    }
+    #bouble{
+        width: 50px;
+    }
+    #flow_mania{
+        width: 50px;
+    }
+    #cut_rope{
+        width: 50px;
+    }
+    #doismil{
+        width: 50px;
+    }
+    #agario{
+        width: 50px;
+    }
+    .jerry_quizz{
+        width: 80px;
+        height: 80px;
+    }
+    .mickeyguitarra{
+        width: 80px;
+        height: 80px;
+    }
+    #dados_pessoais{
+        width: 75%;
+       
+        font-size: 40%;
+    }
+    #Quizzes{
+        width: 75%;
+       
+        font-size: 40%;
+    }
+    #pname{
+        width: 30%;
+        height: 10%;
+        font-size: 100%;
+    }
+    #uname{
+        width: 30%;
+        height: 10%;
+        font-size: 100%;
+    }
+    #email{
+        width: 30%;
+        height: 10%;
+        font-size: 100%;
+    }
+   
+    legend{
+        width: 10%;
+        height: 10%;
+    }
+    .musica{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: relative;
+        float: left;
+        
+        width: 15%;
+        height: 40%;
+    }
+    #guitarra{
+        width: 100px;
+    }
+    #trompete{
+        width: 100px;
+    }
+    #piano{
+        width: 100px;
+    }
+    #bateria{
+        width: 100px;
+    }
+
+    figcaption {
+        background-color: #768186;
+        color: white;
+        font-style: italic;
+        padding: 2px;
+        text-align: center;
+        font-size: 50%;
+    }
+    #trompete_audio{
+        width: 30%;
+    }
+    #piano_audio{
+        width: 30%;
+    }
+    #bateria_audio{
+        width: 30%;
+    }
+    #guitarra_audio{
+        width: 30%;
+    }
+    .sobree{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: relative;
+        float:left;
+        left: -20%;
+    }
+    .tabelas{
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        position: relative;
+        float:left;
+        right: -20%;
+    
+    }
+    .layout1{
+        width: 100%;  
+    }
+    .layout2{
+        width: 100%;
+    }
+    .wordcloud{
+        width: 100%;
+    }
+    .mapa{
+        width: 100%;
+    }
+    .tecnicas_usadas {
+        width: 0%;
+        height: 0%;
+        font-size: 10%;
+        size: 50%;
+        border: 1px solid black;
+      border-collapse: collapse;
+    }
+    .inventario{
+        width: 0%;
+        height: 0%;
+        font-size: 10%;
+        size: 50%;
+        border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+}

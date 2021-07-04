@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html id="Musica_html" lang="pt">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'website/css/estilos.css' %}">
+        <link href='https://fonts.google.com/css?family=Sofia' rel='stylesheet'>
+        <meta name="keywords" content="HTML,CSS">
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="Site para Crianças" content="Website sobre Crianças">
+        <link rel="shortcut icon" type="image/x-icon" href="images/PNG Image.ico"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Musica</title>
+    </head>
+    <body background="{% static 'website/images/musica_fundo.png' %}">
+        <div class="logo_nav">
+            <a href="#"><img src="{% static 'website/images/logo.png' %}"></a>
+        </div>  
+        <div class="grid-container">
+            <div class="Header"> 
+                <nav class="top_nav">
+                    <ul>
+                         <li><a href="{% url 'website:home' %}">Casa</a></li>
+                      <li><a href="{% url 'website:Toys' %}">Personagens</a></li>
+                      <li><a href="{% url 'website:jogos' %}">Jogos</a></li>
+                      <li><a href="{% url 'website:quizz' %}">Quizz</a></li>
+                      <li><a href="{% url 'website:musica' %}">Musica</a></li>
+                      <li><a href="{% url 'website:quinta' %}">Quinta</a></li>
+                      <li><a href="{% url 'website:sobre' %}">Sobre</a></li>
+                           <li><a href="{% url 'website:comentarios' %}">Comentarios</a></li>
+                        <li><a href="{% url 'website:contactos' %}">Contactos</a></li>
+   <li><a href="{% url 'website:index' %}">Single Page</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="Menu">
+                <a id="mickey_guitarra" href="#"><img class="mickeyguitarra" src="{% static 'website/images/mickey_guitarra.png' %}" onmouseover="mickey.play()"></a>
+            </div>
+            <div class="Main">
+                <figure class="musica">
+                        <img id="guitarra" src="{% static 'website/images/guitarra.png' %}">
+                        <audio id="guitarra_audio"  controls>
+                            <source src="{% static 'website/audios/guitarra.mp3' %}" type="audio/ogg">
+                            <source src="{% static 'website/audios/guitarra.mp3' %}" type="audio/mpeg">
+                        </audio>
+                        <figcaption>Guitarra</figcaption>
+                </figure>
+                <figure class="musica">
+                    <img id="piano" src="{% static 'website/images/piano (1).png' %}"  >
+                    <audio id="piano_audio"  controls>
+                        <source src="{% static 'website/audios/piano.mp3' %}"type="audio/ogg">
+                        <source src="{% static 'website/audios/piano.mp3' %}" type="audio/mpeg">
+                    </audio>
+                    <figcaption>Piano</figcaption>                                
+                </figure>
+                <figure class="musica">
+
+                    <img id="bateria" src="{% static 'website/images/bateria.png' %}"  >
+                    <audio id="bateria_audio"  controls>
+                        <source src="{% static 'website/audios/bateria.mp3' %}" type="audio/ogg">
+                        <source src="{% static 'website/audios/bateria.mp3' %}" type="audio/mpeg">
+                    </audio>
+                    <figcaption>Bateria</figcaption>
+            </figure>
+                <figure class="musica">
+
+                        <img id="trompete" src="{% static 'website/images/trompete.png' %}">
+                        <audio id="trompete_audio"  controls>
+                            <source src="{% static 'website/audios/trumpet.mp3' %}" type="audio/ogg">
+                            <source src="{% static 'website/audios/trumpet.mp3' %}" type="audio/mpeg">
+                        </audio>  
+                        <figcaption>Trompete</figcaption>
+                </figure>
+                
+            </div>  
+            <div class="Footer">Divirtam-se</div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
